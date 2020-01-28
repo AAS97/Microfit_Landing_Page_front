@@ -1,0 +1,40 @@
+form p{
+    color :#E6E6E6;
+    font-size: 200%;
+    font-weight: bold;
+}
+.Input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin : 5%;
+
+}
+
+input {
+    width: 30%;
+    height : 35px;
+    font-size: 100%;
+    justify-content: center;
+    color : #E6E6E6;
+    border : none;
+    border-radius: 3%;
+    background-color: rgba(82, 121, 111, 0.5);;
+
+}
+
+input::placeholder{
+    color : #E6E6E6;
+    padding-left: 5%;
+    
+}
+
+input#Submit {
+    margin-bottom: 5vmin;
+    border-width: 3px;
+    border-color: black;
+}
+/* input[type = mail]{
+    background-image: url('search-icon.png');
+} */
