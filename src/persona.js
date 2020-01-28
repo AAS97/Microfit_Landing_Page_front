@@ -18,7 +18,7 @@ export default {
     },
     fat: {
         title: 'Surpoids',
-        desc: 'A la recherche de mon poid d\'équilibre',
+        desc: 'A la recherche de mon poids d\'équilibre',
         icon: fatIcon
     },
     explorer: {
