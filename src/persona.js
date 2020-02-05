@@ -7,28 +7,28 @@ import proIcon from './assets/icons/pro.png'
 export default {
 
     athlete: {
-        title: 'Athlete',
-        desc: 'A la recherche de performance sportives',
+        title: 'Athlète',
+        desc: 'Je suis à la recherche de performance sportives',
         icon: sportIcon
     },
     ill: {
         title: 'Malades',
-        desc: 'Atteint(e) de troubles digestifs',
+        desc: 'Je suis atteint(e) de troubles digestifs',
         icon: illIcon
     },
     fat: {
         title: 'Surpoids',
-        desc: 'A la recherche de mon poids d\'équilibre',
+        desc: 'Je suis à la recherche de mon poids d\'équilibre',
         icon: fatIcon
     },
     explorer: {
-        title: 'Explorer',
-        desc: 'Curieux de découvrir mon microbiote',
+        title: 'Explorateur',
+        desc: 'Je suis curieux de découvrir mon microbiote',
         icon: explorerIcon
     },
     pro: {
         title: 'Pro',
-        desc: 'Professionel de santé',
+        desc: 'Je suis un professionnel de santé',
         icon: proIcon
     }
 

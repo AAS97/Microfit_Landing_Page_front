@@ -19,20 +19,22 @@ class MailForm extends React.Component {
     }
 
     handleSubmit(event) {
-        alert('Le nom a été soumis : ' + this.state.value);
+        //alert('Le nom a été soumis : ' + this.state.value);
         event.preventDefault();
+        this.props.setUserInfo(this.state);
+        this.props.handleSubmit();
     }
 
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
-                <p>Se tenir informer de l'avancé du projet</p>
+                <p>Se tenir informé de l'avancée du projet</p>
                 <div className="Input">
                     <input type="text" id="Firstname" placeholder="Prénom" value={this.state.Firstname} onChange={this.handleChange} />
                     <input type="text" id="Lastname" placeholder="Nom" value={this.state.Lastname} onChange={this.handleChange} />
                     <input type="email" id="Mail" placeholder="Adresse mail" value={this.state.Mail} onChange={this.handleChange} />
                 </div>
-                <input type="submit" id="Submit" value="Envoyer" />
+                <input type="submit" id="Submit" value="Je m'inscrit à la newsletter Microfit" />
             </form>
         );
     }

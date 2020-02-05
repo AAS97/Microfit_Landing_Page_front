@@ -34,7 +34,7 @@
 .title{
         display: flex;
         font-weight: bold;
-        font-size: 100%;
+        font-size: 25px;
         color : #E6E6E6;
         align-items: center;
         text-align: center;
@@ -43,7 +43,7 @@
 }
 
 .card p {
-    font-size: 100%;
+    font-size: 20px;
     color: rgba(132, 169, 140, 1);
     margin : 5% 5% 5% 5%;
 }

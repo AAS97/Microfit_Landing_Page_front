@@ -8,17 +8,19 @@
 }
 
 .App-logo {
-    height: 25vmin;
+    height: 15vmin;
     pointer-events: none;
     padding-top : 2vmin;
 }
 
 .description h1{
    color : rgba(211, 160, 216, 1);
+   font-size: 40px;
 }
 
 .description p{
     color :#E6E6E6;
+    font-size: 30px;
  }
 
 .cards{
@@ -41,10 +43,14 @@ footer {
 }
 
 footer p{
-    height: 10vmin;
+    height: 5vmin;
+    
     padding : 3vmin;
+    padding-bottom: 0%;
+    margin-bottom: 0;
     color : #E6E6E6;
     justify-items: center;
     vertical-align: middle;
+
 
 }

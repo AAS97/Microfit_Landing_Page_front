@@ -20,6 +20,12 @@ class Card extends React.Component {
     }
 
     cardClick() {
+        let newState = !this.state.isClicked;
+        if (newState) {
+            this.props.addSelectedCards(this.props.name);
+        } else {
+            this.props.removeSelectedCards(this.props.name);
+        }
         this.setState({
             isClicked: !this.state.isClicked
         });
