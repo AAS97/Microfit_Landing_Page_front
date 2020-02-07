@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet'
 import logo from './assets/logo.png';
 import './App.css';
 
@@ -76,7 +77,9 @@ class App extends React.Component {
           categorie: infoObject.selectedCard
         });
         //JSON.stringify(infoObject.selectedCard).replace('[', '{').replace(']', '}')
-        fetch('http://localhost:3001/crud', {
+
+        //'http://localhost:3001/crud' for local dev
+        fetch('https://desolate-sierra-46845.herokuapp.com/crud', {
           method: 'post',
           headers: {
             'Content-Type': 'application/json'
@@ -110,6 +113,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <Helmet>
+          <title>Microfit</title>
+        </Helmet>
         <img src={logo} className="App-logo" alt="logo" />
         <div className="description">
           <h1>Retouvez le contrôle de votre microbiote intestinal </h1>
