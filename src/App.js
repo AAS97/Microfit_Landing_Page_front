@@ -8,7 +8,7 @@ import MailForm from './components/MailForm.js'
 
 
 import persona from './persona.js';
-
+import api_url from './api_url.js';
 
 class App extends React.Component {
   constructor(props) {
@@ -20,6 +20,8 @@ class App extends React.Component {
     this.removeSelectedCards = this.removeSelectedCards.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.cards = this.createCards();
+    console.log("API url");
+    console.log(api_url);
   }
 
   infoObject = {
@@ -78,8 +80,7 @@ class App extends React.Component {
         });
         //JSON.stringify(infoObject.selectedCard).replace('[', '{').replace(']', '}')
 
-        //'http://localhost:3001/crud' for local dev
-        fetch('https://desolate-sierra-46845.herokuapp.com/crud', {
+        fetch(api_url, {
           method: 'post',
           headers: {
             'Content-Type': 'application/json'
