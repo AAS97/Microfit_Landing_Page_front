@@ -1,4 +1,5 @@
-const environment = process.env.ENVIRONMENT || 'development'
+const environment = process.env.ENVIRONMENT || 'development';
+console.log(environment);
 
 const urls = {
     development: { url: 'http://localhost:3001/crud' },
