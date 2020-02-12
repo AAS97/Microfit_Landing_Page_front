@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const environment = process.env.ENVIRONMENT || 'development';
 console.log(environment);
 
