@@ -1,6 +1,5 @@
 require('dotenv').config()
-console.log(process.env)
-const environment = process.env.ENVIRONMENT || 'development';
+const environment = process.env.NODE_ENV || 'development';
 console.log(environment);
 
 const urls = {
