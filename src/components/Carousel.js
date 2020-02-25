@@ -20,7 +20,7 @@ class CustomSlider extends Component {
                 <Slider {...settings} >
                     <div className="description">
                         <h1>Retouvez le contrôle de votre microbiote intestinal </h1>
-                        <p>Notre équipe d'experts analyse votre microbiote et vous recommende des probiotiques personalisés</p>
+                        <p>Notre équipe d'experts analyse votre microbiote et vous recommande des probiotiques personnalisés</p>
                     </div>
                     <div className="process">
                         <img src={process} alt="Notre procédé"></img>
