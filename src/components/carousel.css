@@ -1,0 +1,24 @@
+div.description{
+    align-items: center;
+    height : 25vmin;
+}
+.description h1{
+    color : rgba(211, 160, 216, 1);
+    font-size: 40px;
+ }
+ 
+ .description p{
+     color :#E6E6E6;
+     font-size: 30px;
+  }
+
+div.process{
+    align-items: center;
+    height : 25vmin;
+}
+
+img {
+    height : 25vmin;
+    width : auto;
+    align-self: center;
+}  

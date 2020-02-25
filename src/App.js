@@ -2,13 +2,20 @@ import React from 'react';
 import { Helmet } from 'react-helmet'
 import logo from './assets/logo.png';
 import './App.css';
+import ReactGA from 'react-ga'
+
 
 import Card from './components/Card.js';
 import MailForm from './components/MailForm.js'
+import CustomSlider from './components/Carousel.js'
 
 
 import persona from './persona.js';
 import api_url from './api_url.js';
+
+const trackingId = "UA-158734639-1"; // Replace with your Google Analytics tracking ID
+ReactGA.initialize(trackingId);
+ReactGA.pageview('/')
 
 class App extends React.Component {
   constructor(props) {
@@ -118,10 +125,7 @@ class App extends React.Component {
           <title>Microfit</title>
         </Helmet>
         <img src={logo} className="App-logo" alt="logo" />
-        <div className="description">
-          <h1>Retouvez le contrôle de votre microbiote intestinal </h1>
-          <p>Notre équipe d'experts analyse votre microbiote et vous recommende des probiotiques personalisés</p>
-        </div>
+        <CustomSlider className="slider" />
         <div className="cards">
           {this.cards}
         </div>

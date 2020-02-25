@@ -13,15 +13,9 @@
     padding-top : 2vmin;
 }
 
-.description h1{
-   color : rgba(211, 160, 216, 1);
-   font-size: 40px;
+.slider{
+    height : 30vmin;
 }
-
-.description p{
-    color :#E6E6E6;
-    font-size: 30px;
- }
 
 .cards{
     display : flex;

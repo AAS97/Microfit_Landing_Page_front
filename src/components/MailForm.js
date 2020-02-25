@@ -34,7 +34,7 @@ class MailForm extends React.Component {
                     <input type="text" id="Lastname" placeholder="Nom" value={this.state.Lastname} onChange={this.handleChange} />
                     <input type="email" id="Mail" placeholder="Adresse mail" value={this.state.Mail} onChange={this.handleChange} />
                 </div>
-                <input type="submit" id="Submit" value="Je m'inscrit à la newsletter Microfit" />
+                <input type="submit" id="Submit" value="Je m'inscris à la newsletter Microfit" />
             </form>
         );
     }
