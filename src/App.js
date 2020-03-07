@@ -4,6 +4,7 @@ import logo from './assets/logo.png';
 import './App.css';
 import ReactGA from 'react-ga'
 
+import Grid from '@material-ui/core/Grid';
 
 import Card from './components/Card.js';
 import MailForm from './components/MailForm.js'
@@ -57,7 +58,11 @@ class App extends React.Component {
   createCards() {
     let cards = [];
     for (var personaName in persona) {
-      cards.push(<Card name={personaName} key={personaName} addSelectedCards={this.addSelectedCards} removeSelectedCards={this.removeSelectedCards}></Card>);
+      cards.push(
+        <Grid key={personaName} item>
+          <Card name={personaName} key={personaName} addSelectedCards={this.addSelectedCards} removeSelectedCards={this.removeSelectedCards}></Card>
+        </Grid>
+      );
     }
     return cards;
   }
@@ -126,9 +131,11 @@ class App extends React.Component {
         </Helmet>
         <img src={logo} className="App-logo" alt="logo" />
         <CustomSlider className="slider" />
-        <div className="cards">
+        {/* <Grid item xs={50}> */}
+        <Grid container justify="center" spacing='4'>
           {this.cards}
-        </div>
+        </Grid>
+        {/* </Grid> */}
         <MailForm setUserInfo={this.setUserInfo} handleSubmit={this.handleSubmit} />
         <footer>
           <p>© 2020 Microfit Team, Paris</p>

@@ -1,15 +1,19 @@
 div.description{
     align-items: center;
-    height : 25vmin;
+    vertical-align: middle;
+    min-height : 25vmin;
 }
 .description h1{
     color : rgba(211, 160, 216, 1);
-    font-size: 40px;
+    font-size: calc(1em + 1vw);
+    width : 90vw;
+    /* font-size: 40px; */
  }
  
  .description p{
      color :#E6E6E6;
-     font-size: 30px;
+     font-size: calc(1em + 1vw);
+     width : 90vw;
   }
 
 div.process{

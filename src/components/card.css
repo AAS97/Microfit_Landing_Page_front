@@ -1,22 +1,20 @@
 .card{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
 
-    flex : 0 1 15%;
+    flex : 0 1 15%; */
 
     /* flex-shrink: 1;
     flex-grow: 0;
     flex-basis: 100px; */
 
-    height : 10 vmin;
-    width : 15%;
+    height : 100%;
+    width : 20vh;
 
     border-radius: 10%;
     /* background: linear-gradient(145deg, #395558, #30474a); */
     box-shadow: 15px 15px 20px 0 #2d4446, 
             -15px -15px 20px 0 #44666a;
-
-    margin: 20px;
     
 
 }
@@ -32,7 +30,6 @@
 }
 
 .title{
-        display: flex;
         font-weight: bold;
         font-size: 25px;
         color : #E6E6E6;

@@ -1,23 +1,23 @@
 form p{
     color :#E6E6E6;
-    font-size: 40px;
+    font-size: calc(1em + 1vw);
     font-weight: bold;
     margin-bottom: 20px;
     padding-top: 20px;
 }
 .Input {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+    /* display: flex;
+    flex-direction: row; */
+    /* align-items: center;
+    justify-content: space-evenly; */
     margin : 5%;
 
 }
 
 .Input input {
-    width: 30%;
+    min-width: 30%;
     height : 35px;
-    font-size: 25px;
+    font-size: calc(1em + 0.5vw);
     padding : 5px;
     justify-content: center;
     color : #E6E6E6;
@@ -38,7 +38,7 @@ input#Submit {
     width: 50%;
     height : 40px;
 
-    font-size: 25px;
+    font-size: calc(1em);
     font-weight: bold;
     color : #E6E6E6;
     border-width: 1px;
